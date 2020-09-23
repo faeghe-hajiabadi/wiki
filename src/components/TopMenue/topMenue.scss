@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.top-menue-profile-btn{
+    color: $base-white-font-color;
+        &:hover {
+        text-decoration: none;
+        color: $logo-background-color;
+    }
+}
+.top-menue-icon-down{
+    height: 10px;
+    width: 10px;
+}
+.top-menue-icon-down:before {
+    content: "\25BC";
+}
+.top-menue-icons-parent{
+    display: flex;
+}
