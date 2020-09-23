@@ -1,5 +1,5 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col } from "react-bootstrap";
 import "./App.scss";
@@ -10,12 +10,12 @@ function App() {
   return (
     <div>
       <Container fluid>
-        <Row className='total-menues-container'>
-          <Col md lg="9">
-            <TopMenue />
-          </Col>
+        <Row className="total-menues-container">
           <Col ms lg="3">
             <SideMenue />
+          </Col>
+          <Col md lg="9">
+            <TopMenue />
           </Col>
         </Row>
       </Container>

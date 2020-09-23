@@ -1,0 +1,25 @@
+.side-menue-searchbtn{
+    background-color: transparent;
+    border: none;
+
+}
+.side-menue-ham{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.side-menue-search-input{
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #B3CCE8;
+}
+.form-control:focus {
+    color: #495057;
+    background-color:transparent;
+    border-bottom: 1px solid rgb(213, 233, 255);
+    outline: 0;
+    box-shadow: none; 
+}
+.side-menue-row{
+    height: 100%;
+}

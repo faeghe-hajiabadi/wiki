@@ -1,9 +1,30 @@
-import React from 'react'
+import React from "react";
+import "./sideMenue.scss";
+import { Row, Col, InputGroup, FormControl, Button } from "react-bootstrap";
+import search from "../../img/search-icon.png";
+import menue from "../../img/menue-icon.png";
 
 export default function SideMenue() {
-    return (
-        <div>
-            side menue here
-        </div>
-    )
+  return (
+    <Row className="side-menue-row">
+      <Col md lg="4" className="side-menue-ham">
+        <button className="side-menue-searchbtn ">
+          <img src={menue} width="22" height="22"></img>
+        </button>
+      </Col>
+      <Col md lg="8">
+        <InputGroup className="mb-3">
+          <FormControl
+            aria-describedby="basic-addon1"
+            className="side-menue-search-input"
+          />
+          <InputGroup.Prepend>
+            <button className="side-menue-searchbtn">
+              <img width="20" height="20" src={search}></img>
+            </button>
+          </InputGroup.Prepend>
+        </InputGroup>
+      </Col>
+    </Row>
+  );
 }
