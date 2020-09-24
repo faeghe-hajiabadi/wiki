@@ -23,3 +23,31 @@
 .side-menue-row{
     height: 100%;
 }
+.side-menue-title{
+    font-family: 'Crimson Text' !important;
+    text-justify: inter-character;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+}
+.side-menue-big-letter{
+    font-size: 30px;
+}
+.side-menue-sub-title{
+    font-size: 16px;
+}
+.side-menue-container{
+    border-right: 1px solid #EDEBEB;
+    border-bottom: 1px solid #EDEBEB;
+}
+.side-menue-rows{
+    background-color: #F6F9FA;
+}
+.side-menue-contents{
+    color: #ACB0B2;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #EDEEEE;
+}
