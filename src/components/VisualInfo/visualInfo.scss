@@ -1,0 +1,28 @@
+.visualInfo-cols{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.visualInfo-country{
+    @extend .visualInfo-cols;
+    justify-content: space-evenly;
+}
+.visualInfo-gray-row{
+    background-color: #F1F3F4;
+    color: #B0B5B7;
+    height: 3rem;
+}
+.visualInfo-title{
+    font-weight: 600;
+}
+.visualInfo-img{
+    padding: 0 !important;
+}
+.visualInfo-country-title{
+    font-weight: 600;
+    color: black;
+}
+.visualInfo-country-name{
+    font-weight: 500;
+}

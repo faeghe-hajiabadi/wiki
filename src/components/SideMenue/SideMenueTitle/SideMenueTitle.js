@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./sideMenueTitle.scss";
 import narrowDownArrow from "../../../img/icons/narrowDownArrow.png";
 import narrowUpArrow from "../../../img/icons/narrowUpArrow.png";
+import { Container, Row, Col } from "react-bootstrap";
+
 
 export default function SideMenueTitle(props) {
   const [hideItems, setHide] = useState(true);
@@ -11,7 +13,7 @@ export default function SideMenueTitle(props) {
   };
   const subtitleItems = subTitle
     ? subTitle.map((item, key) => {
-        return item;
+        return <Col md lg={12} index={key} className='side-menue-title-items'>{item}</Col>;
       })
     : "";
   return (
@@ -27,7 +29,7 @@ export default function SideMenueTitle(props) {
               ></img>
             </button>
           </div>
-          {!hideItems && <div>{subtitleItems}</div>}
+          {!hideItems && <Row className='side-menue-title-row'>{subtitleItems}</Row>}
         </>
       )}
       {!hasSubTitle && (

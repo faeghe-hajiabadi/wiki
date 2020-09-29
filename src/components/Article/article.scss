@@ -1,0 +1,32 @@
+.article-titel{
+    font-size: 3.5rem;
+   font-family: 'Crimson Text';
+}
+.article-redirect{
+    background-color: #F1F3F4;
+    color: #8890A7;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+.atricle-redirect-link{
+    color: #8890A7;
+    text-decoration: underline;
+    padding-left: 5px;
+    &:hover{
+        color: rgb(116, 123, 143);
+    }
+}
+.article-summery{
+    font-size: 16px;
+    font-weight: 444;
+}
+.article-divider-line{
+    border-bottom: 1px solid #EDEEEE;
+}
