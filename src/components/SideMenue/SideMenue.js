@@ -33,11 +33,18 @@ export default function SideMenue() {
     );
   });
   return (
-    <Container className="side-menue-container">
-      <div className="empty-row"></div>
-      <div className="empty-row"></div>
-      <div className="empty-row"></div>
-      <Row className="justify-content-center">
+    <Container className="side-menue-container sideMenue-gray-container">
+      <Row className="justify-content-center side-menue-logo-container">
+        <Col md lg={12}>
+          <div className="empty-row side-menue-logo-container"></div>
+        </Col>
+        <Col md lg={12}>
+          <div className="empty-row side-menue-logo-container"></div>
+        </Col>
+        <Col md lg={12}>
+          <div className="empty-row side-menue-logo-container"></div>
+        </Col>
+
         <Col className="text-align-center" md lg="12">
           <img width="149.6" height="100" src={wikiLogo}></img>
         </Col>
@@ -56,18 +63,26 @@ export default function SideMenue() {
           </div>
         </Col>
       </Row>
-      <div className="empty-row"></div>
-      <Row className="side-menue-rows custom-border">
-        <div className="empty-row"></div>
-        <Col className="text-align-center " md lg="12">
-          <div className="side-menue-contents">CONTENTS</div>
+      <Row>
+        <Col className="side-menue-logo-container" md lg={12}>
+          <div className="empty-row"></div>
         </Col>
       </Row>
-      <Row className="side-menue-rows">
-        <Col md lg="12">
-          {subtitleItems}
-        </Col>
-      </Row>
+
+      <div className="">
+        <Row className="side-menue-rows custom-border">
+          <div className="empty-row"></div>
+
+          <Col className="text-align-center " md lg="12">
+            <div className="side-menue-contents">CONTENTS</div>
+          </Col>
+        </Row>
+        <Row className="side-menue-rows ">
+          <Col md lg="12">
+            {subtitleItems}
+          </Col>
+        </Row>
+      </div>
     </Container>
   );
 }

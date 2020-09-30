@@ -39,6 +39,7 @@
 .side-menue-container{
     border-right: 1px solid #EDEBEB;
     border-bottom: 1px solid #EDEBEB;
+    height: 100%;
 }
 .side-menue-rows{
     background-color: #F6F9FA;
@@ -50,4 +51,11 @@
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #EDEEEE;
+}
+.sideMenue-gray-container{
+    background-color: #F6F9FA ;
+    height: 100%;
+}
+.side-menue-logo-container{
+    background-color: white;
 }
