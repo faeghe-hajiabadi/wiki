@@ -1,6 +1,7 @@
 .side-menue-searchbtn{
     background-color: transparent;
     border: none;
+   width: 60%;
 
 }
 .side-menue-ham{
@@ -21,7 +22,10 @@
     box-shadow: none; 
 }
 .side-menue-row{
+    display: flex;
+    align-items: center;
     height: 100%;
+   justify-content: space-evenly;
 }
 .side-menue-title{
     font-family: 'Crimson Text' !important;
@@ -43,6 +47,7 @@
 }
 .side-menue-rows{
     background-color: #F6F9FA;
+    
 }
 .side-menue-contents{
     color: #ACB0B2;
@@ -59,3 +64,36 @@
 .side-menue-logo-container{
     background-color: white;
 }
+.dialog-enter {
+    opacity: 0.01;
+    transform: scale(1.1);
+  }
+  
+  .dialog-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 300ms;
+  }
+  
+  .dialog-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .dialog-exit-active {
+    opacity: 0.01;
+    transform: scale(1.1);
+    transition: all 300ms;
+  }
+  .side-menue-logo-img{
+    width :149.6px;
+    height:100px;
+
+  }
+  @media only screen and (max-width: 1200px) {
+    .side-menue-logo-img{
+        width :120px;
+        height:80.53px;
+    
+      }
+  }

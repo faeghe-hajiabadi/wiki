@@ -46,7 +46,7 @@ export default function VisualInfo() {
           </span>
         </Col>
       </Row>
-      <Row className="visualInfo-country-parent">
+      <Row className="visualInfo-country-parent visualInfo-gray-row-last">
         <Col className="visualInfo-video">
           <img src={playBtn} width="40"></img>
           <span className="visualInfo-video-title">

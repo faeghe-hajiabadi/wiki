@@ -18,13 +18,13 @@ export default function ArticleItem(props) {
       <>
         <Row>
           <Col ms lg={1}></Col>
-          <Col md lg={11}>
+          <Col md lg={11} sm='12' xs='12'>
             <span className="article-titel">{title}</span>
           </Col>
         </Row>
         <Row>
           <Col ms lg={1}></Col>
-          <Col md lg={11}>
+          <Col md lg={11} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-redirect">
               {redirect}{" "}
@@ -39,7 +39,7 @@ export default function ArticleItem(props) {
         </Row>
         <Row>
           <Col ms lg={1}></Col>
-          <Col md lg={8}>
+          <Col md lg={8} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-summery">{summery}</span>
           </Col>
@@ -52,13 +52,13 @@ export default function ArticleItem(props) {
       <>
         <Row>
           <Col ms lg={1}></Col>
-          <Col md lg={11}>
+          <Col md lg={11} sm='12' xs='12'>
             <span className="article-history">{itemName}</span>
           </Col>
         </Row>
         <Row>
           <Col ms lg={1}></Col>
-          <Col md lg={11}>
+          <Col md lg={11} sm='12' xs='12'>
             <div className="empty-row-small"></div>
             <span className="article-subTitle">
               {itemSubtitle}
@@ -68,7 +68,7 @@ export default function ArticleItem(props) {
         </Row>
         <Row>
           <Col ms lg={1}></Col>
-          <Col md lg={8}>
+          <Col md lg={8} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-summery">{summery}</span>
           </Col>
@@ -76,7 +76,7 @@ export default function ArticleItem(props) {
         </Row>
         <Row>
           <Col ms lg={1}></Col>
-          <Col md lg={8}>
+          <Col md lg={8} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-summery">
               <img width='100%' src={articleItemImg}></img>

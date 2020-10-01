@@ -12,6 +12,9 @@
   color: #b0b5b7;
   height: 4rem;
 }
+.visualInfo-gray-row-last{
+  @extend .visualInfo-gray-row;
+}
 .visualInfo-gray-rom-map {
   border-bottom: 1px solid #bfc2c3;
 }
@@ -72,4 +75,11 @@
     .div{
         color: #5C5C5C;
     }
+}
+
+@media only screen and (max-width: 1200px) {
+  .visualInfo-gray-row-last {
+
+    height: 8rem;
+  }
 }

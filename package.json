@@ -13,7 +13,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "react-simple-maps": "^2.1.2",
-    "react-tooltip": "^4.2.10"
+    "react-tooltip": "^4.2.10",
+    "react-transition-group": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
