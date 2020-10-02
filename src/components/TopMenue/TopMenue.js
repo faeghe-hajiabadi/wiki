@@ -1,10 +1,10 @@
 import React from "react";
 import { Row, Col, Dropdown, Tabs, Tab } from "react-bootstrap";
-import user_icon from "../../img/icons/user-profile-icon.png";
-import document from "../../img/icons/document-icon.png";
-import edite from "../../img/icons/editing-icon.png";
-import message from "../../img/icons/message-icon.png";
-import clock from "../../img/icons/clock-icon.png";
+import user_icon from "img/icons/user-profile-icon.png";
+import document from "img/icons/document-icon.png";
+import edite from "img/icons/editing-icon.png";
+import message from "img/icons/message-icon.png";
+import clock from "img/icons/clock-icon.png";
 
 import "./topMenue.scss";
 

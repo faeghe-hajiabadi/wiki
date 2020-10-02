@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import wikiLogo from "../../img/logo/wiki-logo.png";
+import wikiLogo from "img/logo/wiki-logo.png";
 import SideMenueTitle from "./SideMenueTitle/SideMenueTitle";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -52,7 +52,11 @@ export default function SideMenue(props) {
               </Col>
 
               <Col className="text-align-center" md lg="12" xs sm="12">
-                <img alt='wiki-logo' className="side-menue-logo-img" src={wikiLogo}></img>
+                <img
+                  alt="wiki-logo"
+                  className="side-menue-logo-img"
+                  src={wikiLogo}
+                ></img>
               </Col>
               <Col className="text-align-center" md lg="12">
                 <div className="empty-row"></div>

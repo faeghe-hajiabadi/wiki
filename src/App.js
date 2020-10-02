@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col } from "react-bootstrap";
 import "./App.scss";
-import TopMenue from "./components/TopMenue/TopMenue";
-import SideMenueTop from "./components/SideMenue/SideMenueTop";
-import SideMenue from "./components/SideMenue/SideMenue";
-import Article from "./components/Article/Article";
-import VisualInfo from "./components/VisualInfo/VisualInfo";
+import TopMenue from "components/TopMenue/TopMenue";
+import SideMenueTop from "components/SideMenue/SideMenueTop";
+import SideMenue from "components/SideMenue/SideMenue";
+import Article from "components/Article/Article";
+import VisualInfo from "components/VisualInfo/VisualInfo";
 import { isMobile } from "react-device-detect";
 
 const articleData = {

@@ -1,9 +1,9 @@
 import React from "react";
-import islandImg from "../../img/visualInfo/visualInfo.jpg";
+import islandImg from "img/visualInfo/visualInfo.jpg";
 import { Row, Col } from "react-bootstrap";
 import "./visualInfo.scss";
 import MapInfo from "./MapInfo";
-import playBtn from "../../img/btn/playBtn.png";
+import playBtn from "img/btn/playBtn.png";
 
 export default function VisualInfo() {
   return (

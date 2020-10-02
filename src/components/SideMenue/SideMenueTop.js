@@ -1,10 +1,9 @@
 import React from "react";
 import "./sideMenue.scss";
 import { InputGroup, FormControl } from "react-bootstrap";
-import search from "../../img/icons/search-icon.png";
-import menue from "../../img/icons/menue-icon.png";
-import close from "../../img/btn/close.png";
-import { isMobile } from "react-device-detect";
+import search from "img/icons/search-icon.png";
+import menue from "img/icons/menue-icon.png";
+import close from "img/btn/close.png";
 
 export default function SideMenueTop({ setMenueOpen, trigger }) {
   const btnClick = () => {
