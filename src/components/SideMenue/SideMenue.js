@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import wikiLogo from "../../img/logo/wiki-logo.png";
 import SideMenueTitle from "./SideMenueTitle/SideMenueTitle";
@@ -25,9 +25,10 @@ export default function SideMenue(props) {
     { title: "Reference", hasSubTitle: false },
   ];
 
-  const subtitleItems = menueTitles.map((item, key) => {
+  const subtitleItems = menueTitles.map((item, index) => {
     return (
       <SideMenueTitle
+        key={index}
         hasSubTitle={item.hasSubTitle}
         subTitle={item.subTitle}
         title={item.title}
@@ -50,8 +51,8 @@ export default function SideMenue(props) {
                 <div className="empty-row side-menue-logo-container"></div>
               </Col>
 
-              <Col className="text-align-center" md lg="12" xs sm='12'>
-                <img className='side-menue-logo-img'  src={wikiLogo}></img>
+              <Col className="text-align-center" md lg="12" xs sm="12">
+                <img alt='wiki-logo' className="side-menue-logo-img" src={wikiLogo}></img>
               </Col>
               <Col className="text-align-center" md lg="12">
                 <div className="empty-row"></div>

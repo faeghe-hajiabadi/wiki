@@ -2,7 +2,11 @@
     background-color: transparent;
     border: none;
    width: 60%;
+   
 
+}
+.side-menue-ham-menue-btn{
+padding-bottom: 10px;
 }
 .side-menue-ham{
     display: flex;
@@ -25,7 +29,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-   justify-content: space-evenly;
+   justify-content: space-between;
 }
 .side-menue-title{
     font-family: 'Crimson Text' !important;

@@ -1,10 +1,10 @@
 import React from "react";
 import "./sideMenue.scss";
-import { Row, Col, InputGroup, FormControl, Button } from "react-bootstrap";
+import { InputGroup, FormControl } from "react-bootstrap";
 import search from "../../img/icons/search-icon.png";
 import menue from "../../img/icons/menue-icon.png";
 import close from "../../img/btn/close.png";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { isMobile } from "react-device-detect";
 
 export default function SideMenueTop({ setMenueOpen, trigger }) {
   const btnClick = () => {
@@ -13,20 +13,26 @@ export default function SideMenueTop({ setMenueOpen, trigger }) {
   return (
     <>
       <div className="side-menue-row">
-        <div md lg="4" className="side-menue-ham">
+        <div md="4" lg="4" className="side-menue-ham">
           {trigger && (
-            <button onClick={btnClick} className="side-menue-searchbtn ">
-              <img src={close} width="23" height="23"></img>
+            <button
+              onClick={btnClick}
+              className="side-menue-searchbtn side-menue-ham-menue-btn "
+            >
+              <img alt="close" src={close} width="23" height="23"></img>
             </button>
           )}
 
           {!trigger && (
-            <button onClick={btnClick} className="side-menue-searchbtn ">
-              <img src={menue} width="25" height="25"></img>
+            <button
+              onClick={btnClick}
+              className="side-menue-searchbtn side-menue-ham-menue-btn "
+            >
+              <img alt="menue" src={menue} width="25" height="25"></img>
             </button>
           )}
         </div>
-        <div md  className='side-menue-searchbtn'>
+        <div className="side-menue-searchbtn">
           <InputGroup className="mb-3">
             <FormControl
               aria-describedby="basic-addon1"
@@ -34,7 +40,7 @@ export default function SideMenueTop({ setMenueOpen, trigger }) {
             />
             <InputGroup.Prepend>
               <button className="side-menue-searchbtn">
-                <img width="25" height="24" src={search}></img>
+                <img alt="search" width="20" height="20" src={search}></img>
               </button>
             </InputGroup.Prepend>
           </InputGroup>

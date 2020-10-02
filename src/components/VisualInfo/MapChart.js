@@ -4,10 +4,9 @@ import {
   Geographies,
   Geography,
   Marker,
-  Line
+  Line,
 } from "react-simple-maps";
 import "./mapInfo.scss";
-
 
 const MapChart = ({ setTooltipContent }) => {
   const geoUrl =
@@ -17,7 +16,7 @@ const MapChart = ({ setTooltipContent }) => {
     {
       markerOffset: 10,
       name: "Martinique",
-      coordinates: [2.349014, 48.864716],
+      coordinates: [-60, 14],
     },
   ];
   return (
@@ -44,12 +43,12 @@ const MapChart = ({ setTooltipContent }) => {
           }
         </Geographies>
         <Line
-        from={[2, -35]}
-        to={[2, 80]}
-        stroke="#BFC2C3"
-        strokeWidth={2}
-        strokeLinecap="round"
-      />
+          from={[-60, -90, 100]}
+          to={[-60, 90, 20]}
+          stroke="#BFC2C3"
+          strokeWidth={2}
+          strokeLinecap="round"
+        />
         {markers.map(({ name, coordinates, markerOffset }) => (
           <Marker
             key={name}
@@ -71,7 +70,6 @@ const MapChart = ({ setTooltipContent }) => {
               });
             }}
           >
-           
             <circle r={10} fill="#29A0EB" stroke="#29A0EB" strokeWidth={2} />
           </Marker>
         ))}

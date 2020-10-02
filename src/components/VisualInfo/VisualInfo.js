@@ -15,7 +15,7 @@ export default function VisualInfo() {
       </Row>
       <Row>
         <Col className="visualInfo-img" md lg={12}>
-          <img src={islandImg} width="100%"></img>
+          <img alt='martinique island' src={islandImg} width="100%"></img>
         </Col>
       </Row>
       <Row className="visualInfo-country-parent">
@@ -48,7 +48,10 @@ export default function VisualInfo() {
       </Row>
       <Row className="visualInfo-country-parent visualInfo-gray-row-last">
         <Col className="visualInfo-video">
-          <img src={playBtn} width="40"></img>
+          <a href='https://www.youtube.com/watch?v=FMxNm7hJi1A&feature=emb_logo&ab_channel=MartiniqueMagnifique'>
+            <img  alt='play' src={playBtn} width="40"></img>
+          </a>
+          
           <span className="visualInfo-video-title">
             <span>The National Anthem </span>
             <div>Recorded in 1995 </div>

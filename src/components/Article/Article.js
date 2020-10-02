@@ -1,12 +1,10 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
 import "./article.scss";
 import ArticleItem from './ArticleItems/ArticleItem';
 
 export default function Article(props) {
   const { articleData } = props;
 
-  console.log("title", articleData);
 
   return (
     <>

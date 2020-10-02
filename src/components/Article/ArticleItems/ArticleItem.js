@@ -17,14 +17,14 @@ export default function ArticleItem(props) {
     return (
       <>
         <Row>
-          <Col ms lg={1}></Col>
-          <Col md lg={11} sm='12' xs='12'>
+          <Col md={1} lg={1}></Col>
+          <Col md={11} lg={11} sm='12' xs='12'>
             <span className="article-titel">{title}</span>
           </Col>
         </Row>
         <Row>
-          <Col ms lg={1}></Col>
-          <Col md lg={11} sm='12' xs='12'>
+          <Col lg={1}></Col>
+          <Col md={11} lg={11} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-redirect">
               {redirect}{" "}
@@ -38,12 +38,12 @@ export default function ArticleItem(props) {
           </Col>
         </Row>
         <Row>
-          <Col ms lg={1}></Col>
-          <Col md lg={8} sm='12' xs='12'>
+          <Col  lg={1}></Col>
+          <Col md={8} lg={8} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-summery">{summery}</span>
           </Col>
-          <Col ms lg={3}></Col>
+          <Col  lg={3}></Col>
         </Row>
       </>
     );
@@ -51,14 +51,14 @@ export default function ArticleItem(props) {
     return (
       <>
         <Row>
-          <Col ms lg={1}></Col>
-          <Col md lg={11} sm='12' xs='12'>
+          <Col  lg={1}></Col>
+          <Col md={11} lg={11} sm='12' xs='12'>
             <span className="article-history">{itemName}</span>
           </Col>
         </Row>
         <Row>
-          <Col ms lg={1}></Col>
-          <Col md lg={11} sm='12' xs='12'>
+          <Col  lg={1}></Col>
+          <Col md={11} lg={11} sm='12' xs='12'>
             <div className="empty-row-small"></div>
             <span className="article-subTitle">
               {itemSubtitle}
@@ -67,22 +67,22 @@ export default function ArticleItem(props) {
           </Col>
         </Row>
         <Row>
-          <Col ms lg={1}></Col>
-          <Col md lg={8} sm='12' xs='12'>
+          <Col  lg={1}></Col>
+          <Col md={8} lg={8} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-summery">{summery}</span>
           </Col>
-          <Col ms lg={3}></Col>
+          <Col lg={3}></Col>
         </Row>
         <Row>
-          <Col ms lg={1}></Col>
-          <Col md lg={8} sm='12' xs='12'>
+          <Col lg={1}></Col>
+          <Col md={8} lg={8} sm='12' xs='12'>
             <div className="empty-row"></div>
             <span className="article-summery">
-              <img width='100%' src={articleItemImg}></img>
+              <img alt='articleItem' width='100%' src={articleItemImg}></img>
             </span>
           </Col>
-          <Col ms lg={3}></Col>
+          <Col  lg={3}></Col>
         </Row>
       </>
     );

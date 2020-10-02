@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./sideMenueTitle.scss";
 import narrowDownArrow from "../../../img/icons/narrowDownArrow.png";
 import narrowUpArrow from "../../../img/icons/narrowUpArrow.png";
-import { Container, Row, Col } from "react-bootstrap";
+import {  Row, Col } from "react-bootstrap";
 
 
 export default function SideMenueTitle(props) {
@@ -24,6 +24,7 @@ export default function SideMenueTitle(props) {
             <span>{title}</span>
             <button onClick={toggleBtn} className="side-menue-btn">
               <img
+                alt='arrow'
                 width="15"
                 src={hideItems ? narrowDownArrow : narrowUpArrow}
               ></img>

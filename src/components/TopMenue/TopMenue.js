@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Dropdown, Tabs, Tab, Nav } from "react-bootstrap";
+import React from "react";
+import { Row, Col, Dropdown, Tabs, Tab } from "react-bootstrap";
 import user_icon from "../../img/icons/user-profile-icon.png";
 import document from "../../img/icons/document-icon.png";
 import edite from "../../img/icons/editing-icon.png";
@@ -11,7 +11,7 @@ import "./topMenue.scss";
 export default function TopMenue() {
   const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
-      href=""
+      href="/"
       ref={ref}
       className="top-menue-profile-btn"
       onClick={(e) => {
@@ -28,14 +28,14 @@ export default function TopMenue() {
 
   return (
     <Row className="top-menue-row">
-      <Col md lg="8" sm='11' xs='11' >
+      <Col md lg="8" sm="11" xs="11">
         <div className="top-menue-icons-parent">
           <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
             <Tab
               eventKey="home"
               title={
                 <div className="padding-box-10">
-                  <img width="20" height="20" src={clock}></img>
+                  <img alt="clock" width="20" height="20" src={clock}></img>
                 </div>
               }
             ></Tab>
@@ -43,7 +43,12 @@ export default function TopMenue() {
               eventKey="profile"
               title={
                 <div className="padding-box-10">
-                  <img width="20" height="21.62" src={message}></img>
+                  <img
+                    alt="message"
+                    width="20"
+                    height="21.62"
+                    src={message}
+                  ></img>
                 </div>
               }
             ></Tab>
@@ -51,7 +56,7 @@ export default function TopMenue() {
               eventKey="contact"
               title={
                 <div className="padding-box-10">
-                  <img width="20" height="21.10" src={edite}></img>
+                  <img alt="edite" width="20" height="21.10" src={edite}></img>
                 </div>
               }
             ></Tab>
@@ -59,17 +64,22 @@ export default function TopMenue() {
               eventKey="document"
               title={
                 <div className="padding-box-10">
-                  <img width="15.25" height="20" src={document}></img>
+                  <img
+                    alt="document"
+                    width="15.25"
+                    height="20"
+                    src={document}
+                  ></img>
                 </div>
               }
             ></Tab>
           </Tabs>
         </div>
       </Col>
-      <Col md mdOffset={5} lg="4" ms='4' sm='1' xs='1' className="top-menue-col">
+      <Col md="4" lg="4" ms="4" sm="1" xs="1" className="top-menue-col">
         <Dropdown>
           <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-            <img src={user_icon} width="18" height="19.05"></img>
+            <img alt="user" src={user_icon} width="18" height="19.05"></img>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>

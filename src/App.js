@@ -8,6 +8,7 @@ import SideMenueTop from "./components/SideMenue/SideMenueTop";
 import SideMenue from "./components/SideMenue/SideMenue";
 import Article from "./components/Article/Article";
 import VisualInfo from "./components/VisualInfo/VisualInfo";
+import { isMobile } from "react-device-detect";
 
 const articleData = {
   title: "Martinique",
@@ -23,26 +24,26 @@ const articleData = {
 };
 
 function App() {
-  const [isMenueOpen, setMenueOpen] = useState(true);
+  const [isMenueOpen, setMenueOpen] = useState(isMobile ? false : true);
   return (
     <div>
       <Container fluid>
         <Row className="total-menues-container">
-          <Col md='2' lg="2" sm='2' xs='12'>
+          <Col md="2" lg="2" sm="2" xs="12">
             <SideMenueTop setMenueOpen={setMenueOpen} trigger={isMenueOpen} />
           </Col>
-          <Col md='10' lg="10" sm='10' xs='12'>
+          <Col md="10" lg="10" sm="10" xs="12">
             <TopMenue />
           </Col>
         </Row>
         <Row>
-          <Col md='3' lg="2" sm='3' xs={12} >
+          <Col md="3" lg="2" sm="3" xs={12}>
             <SideMenue isOpen={isMenueOpen} />
           </Col>
-          <Col md='6' lg="7" sm='5' xs='12'>
+          <Col md="6" lg="7" sm="5" xs="12">
             <Article articleData={articleData} />
           </Col>
-          <Col md='3' lg="3" sm='4' xs='12'>
+          <Col md="3" lg="3" sm="4" xs="12">
             <VisualInfo />
           </Col>
         </Row>
