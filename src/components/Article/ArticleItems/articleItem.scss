@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
 
 }
 .atricle-redirect-link{
@@ -41,3 +41,29 @@
 .empty-row-small{
     height: 30px;
 }
+.element {
+    position: relative;
+  }
+  
+  .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  
+  .element:hover .tooltip {
+    display: block;
+  }
+.articl-item-redirect-items{
+    padding-left: 10px;
+}
+
+  @media only screen and (max-width: 1200px) {
+    .article-redirect{
+    
+        width: 20rem !important;
+    }
+  }

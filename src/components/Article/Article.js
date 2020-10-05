@@ -3,7 +3,7 @@ import "./article.scss";
 import ArticleItem from './ArticleItems/ArticleItem';
 
 export default function Article(props) {
-  const { articleData } = props;
+  const { articleData,articleDataSecondPart } = props;
 
 
   return (
@@ -16,7 +16,12 @@ export default function Article(props) {
       <span className="article-divider-line">
         <hr />
       </span>
-      <ArticleItem articleData={articleData} isTitle={false} />  
+      <ArticleItem articleData={articleData} isTitle={false} /> 
+      <div className="empty-row"></div>
+      <span className="article-divider-line">
+        <hr />
+      </span>
+      <ArticleItem articleData={articleDataSecondPart} isTitle={true} />  
     </>
   );
 }

@@ -28,7 +28,7 @@ export default function TopMenue() {
 
   return (
     <Row className="top-menue-row">
-      <Col md lg="8" sm="11" xs="11">
+      <Col md='9' lg="9" sm="11" xs="11">
         <div className="top-menue-icons-parent">
           <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
             <Tab
@@ -76,7 +76,7 @@ export default function TopMenue() {
           </Tabs>
         </div>
       </Col>
-      <Col md="4" lg="4" ms="4" sm="1" xs="1" className="top-menue-col">
+      <Col md="3" lg="3" ms="3" sm="1" xs="1" className="top-menue-col">
         <Dropdown>
           <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
             <img alt="user" src={user_icon} width="18" height="19.05"></img>
