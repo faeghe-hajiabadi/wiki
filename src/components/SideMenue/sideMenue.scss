@@ -45,6 +45,7 @@ padding-bottom: 10px;
     font-size: 16px;
 }
 .side-menue-container{
+    position: sticky;
     border-right: 1px solid #EDEBEB;
     border-bottom: 1px solid #EDEBEB;
     height: 100%;
@@ -93,6 +94,10 @@ padding-bottom: 10px;
     width :149.6px;
     height:100px;
 
+  }
+  .side-menue-searchbtn :focus{
+    border: none;
+    outline: none !important;
   }
   @media only screen and (max-width: 1200px) {
     .side-menue-logo-img{

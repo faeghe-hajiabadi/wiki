@@ -4,6 +4,7 @@ import { InputGroup, FormControl } from "react-bootstrap";
 import search from "img/icons/search-icon.png";
 import menue from "img/icons/menue-icon.png";
 import close from "img/btn/close.png";
+import isMobile from 'react-device-detect';
 
 export default function SideMenueTop({ setMenueOpen, trigger }) {
   const btnClick = () => {
@@ -13,7 +14,7 @@ export default function SideMenueTop({ setMenueOpen, trigger }) {
     <>
       <div className="side-menue-row">
         <div md="4" lg="4" className="side-menue-ham">
-          {trigger && (
+          {isMobile && (
             <button
               onClick={btnClick}
               className="side-menue-searchbtn side-menue-ham-menue-btn "
@@ -22,13 +23,13 @@ export default function SideMenueTop({ setMenueOpen, trigger }) {
             </button>
           )}
 
-          {!trigger && (
-            <button
-              onClick={btnClick}
+          {!isMobile && (
+            <div
+              // onClick={btnClick}
               className="side-menue-searchbtn side-menue-ham-menue-btn "
             >
               <img alt="menue" src={menue} width="25" height="25"></img>
-            </button>
+            </div>
           )}
         </div>
         <div className="side-menue-searchbtn">

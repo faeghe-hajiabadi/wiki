@@ -70,7 +70,7 @@ const MapChart = ({ setTooltipContent }) => {
               });
             }}
           >
-            <circle r={10} fill="#29A0EB" stroke="#29A0EB" strokeWidth={2} />
+            <circle  r={10} fill="#29A0EB" stroke="#29A0EB" strokeWidth={2} />
           </Marker>
         ))}
       </ComposableMap>

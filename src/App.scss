@@ -13,6 +13,10 @@
 body {
   // font-family: 'Haas Grot Text R Web';
   font-size: 14px;
+
+}
+* :focus{
+  outline: hidden;
 }
 .text-align-center{
   text-align: center;
@@ -45,4 +49,7 @@ body {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+.text-align-justify{
+  text-align: justify;
 }

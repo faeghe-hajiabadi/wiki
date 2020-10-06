@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
 import wikiLogo from "img/logo/wiki-logo.png";
 import SideMenueTitle from "./SideMenueTitle/SideMenueTitle";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
@@ -7,32 +7,37 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 export default function SideMenue(props) {
   const { isOpen } = props;
   const menueTitles = [
-    { title: "Abstract", hasSubTitle: false },
+    { title: "Abstract", hasSubTitle: false, link: "#home" },
     {
       title: "History",
+      link: "#history",
       hasSubTitle: true,
       subTitle: ["European contact", "Major century", "The revolution"],
     },
-    { title: "Governance", hasSubTitle: false },
+    { title: "Governance", hasSubTitle: false, link: "#governance" },
     {
       title: "Geography",
+      link: "",
       hasSubTitle: true,
       subTitle: ["Subdivisions", "Mount pelee", "Geopolitics"],
     },
-    { title: "Econimics", hasSubTitle: false },
-    { title: "Demographics", hasSubTitle: false },
-    { title: "Culture", hasSubTitle: false },
-    { title: "Reference", hasSubTitle: false },
+    { title: "Econimics", hasSubTitle: false, disabled: true },
+    { title: "Demographics", link: "#demographics", hasSubTitle: false },
+    { title: "Culture", disabled: true, hasSubTitle: false },
+    { title: "Reference", disabled: true, hasSubTitle: false },
   ];
 
   const subtitleItems = menueTitles.map((item, index) => {
+    const itemClass = item.disabled ? "disabled" : "";
     return (
-      <SideMenueTitle
-        key={index}
-        hasSubTitle={item.hasSubTitle}
-        subTitle={item.subTitle}
-        title={item.title}
-      />
+      <a href={item.link} className={itemClass}>
+        <SideMenueTitle
+          key={index}
+          hasSubTitle={item.hasSubTitle}
+          subTitle={item.subTitle}
+          title={item.title}
+        />
+      </a>
     );
   });
   return (
@@ -91,7 +96,9 @@ export default function SideMenue(props) {
               </Row>
               <Row className="side-menue-rows ">
                 <Col md lg="12">
-                  {subtitleItems}
+                  <Nav variant="tabs" className="flex-column">
+                    {subtitleItems}
+                  </Nav>
                 </Col>
               </Row>
             </div>
