@@ -54,8 +54,59 @@
     border: 1px solid black;
   }
   
-  .element:hover .tooltip {
-    display: block;
+  .element  {
+    position:relative; /* making the .tooltip span a container for the tooltip text */
+  
+  }
+  .element:before{
+    content: attr(data-text); /* here's the magic */
+    position:absolute;
+    
+    /* vertically center */
+    top:50%;
+    transform:translateY(-50%);
+    
+    /* move to right */
+    left:100%;
+    margin-left:15px; /* and add a small left margin */
+    
+    /* basic styles */
+    width:200px;
+    padding:10px;
+    border-radius:10px;
+    background:#505D62;
+    color: #fff;
+    text-align:center;
+    font-family: 900;
+    display:none; /* hide by default */
+  }
+  .element:hover:before {
+    display:block;
+    font-family: 900;
+  }
+  .element:after {
+    content: "";
+    position:absolute;
+    
+    /* position tooltip correctly */
+    left:100%;
+    margin-left:-5px;
+   
+    /* vertically center */
+    top:50%;
+    transform:translateY(-50%);
+   
+    /* the arrow */
+    border:10px solid #000;
+    border-color: transparent black transparent transparent;
+    font-family: 900;
+    display:none;
+  }
+  .element:hover:before, .tooltip:hover:after {
+    display:block;
+    font-weight: 700;
+    font-size: 14px;
+    
   }
 .articl-item-redirect-items{
     padding-left: 10px;

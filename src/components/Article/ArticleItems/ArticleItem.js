@@ -42,7 +42,7 @@ export default function ArticleItem(props) {
         </Row>
         <Row>
           <Col lg={1}></Col>
-          <Col md={8} lg={8} sm="12" xs="12">
+          <Col md={12} lg={8} sm="12" xs="12">
             <div className="empty-row"></div>
             <span className="article-summery">
               <div className="text-align-justify">{parse(summery)}</div>
@@ -81,7 +81,7 @@ export default function ArticleItem(props) {
         </Row>
         <Row>
           <Col lg={1}></Col>
-          <Col md={8} lg={8} sm="12" xs="12">
+          <Col md={12} lg={8} sm="12" xs="12">
             <div className="empty-row"></div>
             <span className="article-summery">
               <div className="text-align-justify">{parse(itemContent)}</div>
@@ -91,7 +91,7 @@ export default function ArticleItem(props) {
         </Row>
         <Row>
           <Col lg={1}></Col>
-          <Col md={8} lg={8} sm="12" xs="12">
+          <Col md={12} lg={8} sm="12" xs="12">
             <div className="empty-row"></div>
             <span className="article-summery">
               <img alt="articleItem" width="100%" src={articleItemImg}></img>

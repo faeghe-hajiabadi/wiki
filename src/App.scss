@@ -53,3 +53,11 @@ body {
 .text-align-justify{
   text-align: justify;
 }
+.hide-me{
+  display: none;
+  transform: display(30)
+}
+.show-me{
+  display: block;
+  animation: fade_in_show 0.8s
+}

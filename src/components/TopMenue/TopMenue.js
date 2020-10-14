@@ -76,7 +76,7 @@ export default function TopMenue() {
           </Tabs>
         </div>
       </Col>
-      <Col md="3" lg="3" ms="3" sm="1" xs="1" className="top-menue-col">
+      <Col md="3" lg="3" ms="3" sm="1" xs="1" className="top-menue-col col-12">
         <Dropdown>
           <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
             <img alt="user" src={user_icon} width="18" height="19.05"></img>
